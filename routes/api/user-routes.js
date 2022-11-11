@@ -5,7 +5,6 @@ const {
 } = require('../../controllers/user-controller');
 
 router
-  .route('/')
-  .get(getAllUser)
+  .route('/').get(getAllUser)
 
 module.exports = router;
