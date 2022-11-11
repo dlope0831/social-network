@@ -1,6 +1,6 @@
 const { Schema, model, Types, default: mongoose} = require("mongoose");
-const dateFormat = require('.../utils/dateFormat');
-import { isEmail } from 'validator';
+const dateFormat = require("../utils/dateFormat");
+
 
 const UserSchema = new Schema (
     {
@@ -12,11 +12,9 @@ const UserSchema = new Schema (
     },
     email: {
         type: String,
-        required: [true, "Please enter your email"],   
-        unique: true,
-        validate: {
-            validator: isEmail, message: 'Invalid email'
-        }     
+        required: true,   
+        match: /.+\@.+\..+/,
+        unique: true
     },
     thoughts: [ 
         {
@@ -45,4 +43,4 @@ UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
   });
 
-module.exports = Comment;
+module.exports = User;

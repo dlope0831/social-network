@@ -1,3 +1,4 @@
+const { trusted } = require('mongoose');
 const { User } = require('../models');
 
 const userController =  {
