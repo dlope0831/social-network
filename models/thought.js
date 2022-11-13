@@ -12,6 +12,7 @@ const ReactionSchema = new mongoose.Schema(
         reactionBody: {
             type: String,
             required: true,
+            min: 1,
             max: 280
         }
     },
@@ -37,7 +38,7 @@ const ReactionSchema = new mongoose.Schema(
 
 const ThoughtSchema = new Schema (
     {
-        throughText: {
+        thoughtText: {
             type: String,
             required: true,
             min: 1,
@@ -69,8 +70,11 @@ const ThoughtSchema = new Schema (
         }
     );
 
-const Thought = model('Thought', ThoughtSchema);
 
 ThoughtSchema.virtual('reactionCount').get(function() {
-    return this.reactions.reduce((total, reaction) => total + reaction.replies.length + 1, 0);
-})
+    return this.reactions.length;
+});
+
+const Thought = model('Thought', ThoughtSchema);
+
+module.exports = Thought;
