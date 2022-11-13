@@ -1,5 +1,5 @@
-const { Schema, model, Types, default: mongoose} = require("mongoose");
-const dateFormat = require("../utils/dateFormat");
+const { Schema, model, Types } = require("mongoose");
+
 
 
 const UserSchema = new Schema (
@@ -19,13 +19,13 @@ const UserSchema = new Schema (
     thoughts: [ 
         {
         type: Schema.Types.ObjectId,
-        ref: 'Thought'
+        ref: 'Thought',
     }
     ],
     friends: [
         {
         type: Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
         }
     ]
     },
@@ -37,10 +37,11 @@ const UserSchema = new Schema (
         id: false
         }
     );
-const User = model('User', UserSchema);
 
 UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
   });
+
+  const User = model('User', UserSchema);
 
 module.exports = User;
