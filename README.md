@@ -1,6 +1,6 @@
 ## Description
 
-**Social Network** a web application where users can share their thoughts, react to friends thoughts, and create a friend list. 
+**Social Network** is a web application where users can share their thoughts, react to friends thoughts, and create a friend list. 
 
 
 <div align="center">
