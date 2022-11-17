@@ -37,5 +37,5 @@ Social Network was built using the following technologies:
 
 ## Video Walkthrough
 
- [SkyNet Watch Presentation](https://www.canva.com/design/DAFP_2oqbOs/xQjiC4rumsYCmouumQzwDA/edit?utm_content=DAFP_2oqbOs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+ [Social Network Video](https://drive.google.com/file/d/1mFctT67vLMdDLFqVnu9A1Hjd4hmf2Ccn/view)  
 
