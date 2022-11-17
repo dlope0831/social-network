@@ -13,9 +13,9 @@
 
 Customize your Social Network community by creating your own: 
 
-** Clone the repository on your machine
-** Run `npm install` at the root of the project
-** After installation, run `npm start` at the root of your folder to get started!
+* Clone the repository on your machine
+* Run `npm install` at the root of the project
+* After installation, run `npm start` at the root of your folder to get started!
 
 Please Note, you should have Mongo installed on your computer. 
 
@@ -37,5 +37,5 @@ Social Network was built using the following technologies:
 
 ## Video Walkthrough
 
- [Social Network Video](https://drive.google.com/file/d/1mFctT67vLMdDLFqVnu9A1Hjd4hmf2Ccn/view)  
+ [Click here to watch](https://drive.google.com/file/d/1mFctT67vLMdDLFqVnu9A1Hjd4hmf2Ccn/view)  
 
